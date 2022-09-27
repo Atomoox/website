@@ -1,0 +1,5 @@
+const Technology = () => {
+
+};
+
+export { Technology };
