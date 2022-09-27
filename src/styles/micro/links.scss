@@ -1,0 +1,15 @@
+.socials {
+    gap: 10px;
+}
+
+.external--link {
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+    animation: ease-in-out;
+    transition-duration: .4s;
+
+    &:hover {
+        scale: 1.25;
+    }
+}

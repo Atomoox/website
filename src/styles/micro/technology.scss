@@ -1,0 +1,22 @@
+@import '../variables.scss';
+
+.technologies--wrapper {
+    padding: 20px 0px;
+    width: calc(100%);
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+
+    .technology {
+        font-size: 20px;
+        font-weight: 600;
+        gap: 5px;
+        color: $title-color;
+
+        svg {
+            height: 25px;
+            width: 25px;
+        }
+    }
+}
