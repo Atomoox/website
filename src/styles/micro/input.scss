@@ -1,0 +1,31 @@
+@import "../variables.scss";
+
+.input--wrapper {
+    .label {
+        color: $text-color;
+        font-weight: normal;
+    }
+
+    input {
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px #A7A7A7 solid;
+        border-radius: 5px;
+        background-color: #2F2F2F;
+        min-width: 350px;
+    }
+
+    textarea {
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px #A7A7A7 solid;
+        border-radius: 5px;
+        background-color: #2F2F2F;
+    }
+}
+
+.input--displays {
+    gap: 20px;
+}
