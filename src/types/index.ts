@@ -19,4 +19,36 @@ const PROJECTS = [
     }
 ];
 
-export { Route, ROUTES, PROJECTS };
+const EVENTS = [
+    {
+        title: 'Montpellier-Sète DUT - Computer Science departement',
+        details: '2yr',
+        date: '2022 - Present'
+    },
+    {
+        title: 'Royalsea',
+        details: 'Founder / Developper',
+        date: '2021 - Present'
+    },
+    {
+        title: 'Montpellier-Sète DUT - Computer Science departement',
+        details: '1yr',
+        date: '2021 - 2022'
+    },
+    {
+        title: 'Graduated high school',
+        date: '2021'
+    },
+    {
+        title: 'Ignite LLC',
+        details: 'Head backend developper',
+        date: '2020 - 2021'
+    },
+    {
+        title: 'Lycée Frédéric Bazille',
+        details: '(High school) - Agropolis (Mathematics / CS)',
+        date: '2019 - 2021'
+    },
+]
+
+export { Route, ROUTES, PROJECTS, EVENTS };

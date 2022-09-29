@@ -1,0 +1,29 @@
+@import '../variables.scss';
+
+.event {
+    color: $title-color;
+    justify-content: space-between;
+    align-items: center;
+    .name {
+        gap: 5px;
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .details {
+
+        }
+    }
+
+    .date {
+        background-color: white;
+        color: black;
+        padding: 5px 10px;
+    }
+}
+
+.timeline--wrapper {
+    margin-top: 50px;
+    gap: 30px;
+}
