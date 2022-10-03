@@ -1,6 +1,9 @@
 @import "../variables.scss";
 
 .input--wrapper {
+    gap: 5px;
+    width: 80%;
+
     .label {
         color: $text-color;
         font-weight: normal;

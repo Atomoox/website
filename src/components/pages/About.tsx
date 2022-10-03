@@ -1,7 +1,10 @@
 import { ExternalLink } from "../micro/ExternalLink";
+import { Technology } from "../micro/Technology";
 
 import { PROJECTS } from "../../types";
 import { Project } from "../micro/Project";
+
+import { ReactComponent as Download } from '../../assets/download.svg';
 
 import { ReactComponent as Twitter } from '../../assets/twitter.svg';
 import { ReactComponent as Github } from '../../assets/github.svg';
@@ -20,11 +23,19 @@ import { ReactComponent as Aws } from '../../assets/aws.svg';
 import '../../styles/micro/project.scss';
 import '../../styles/micro/links.scss';
 import '../../styles/micro/technology.scss';
-import { Technology } from "../micro/Technology";
+import '../../styles/micro/resume.scss';
 
 const About = () => {
     return (
         <div className="flex--column page">
+
+            <div className="flex--row resume--wrapper">
+                <div>
+                    Download my resume here
+                </div>
+                <Download />
+            </div>
+
             <div className="flex--row socials">
                 <ExternalLink color="#1A8CD8" href="https://twitter.com/1020Forbidden" img={Twitter}/>
                 <ExternalLink color="white" href="https://github.com/Atomoox" img={Github}/>

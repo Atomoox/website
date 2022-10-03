@@ -7,7 +7,11 @@ interface ExternalLinkProps {
 const ExternalLink = (props: ExternalLinkProps) => {
     const Image = props.img;
     return (
-        <div className="flex--column external--link" style={{backgroundColor: props.color}}>
+        <div 
+            className="flex--column external--link" 
+            style={{backgroundColor: props.color}}
+            onClick={() => window.open(props.href, "_blank")}
+        >
             <Image />
         </div>
     );
