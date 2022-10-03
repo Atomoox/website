@@ -4,8 +4,6 @@ import { Technology } from "../micro/Technology";
 import { PROJECTS } from "../../types";
 import { Project } from "../micro/Project";
 
-import { ReactComponent as Download } from '../../assets/download.svg';
-
 import { ReactComponent as Twitter } from '../../assets/twitter.svg';
 import { ReactComponent as Github } from '../../assets/github.svg';
 import { ReactComponent as LinkedIn } from '../../assets/linkedin.svg';
@@ -23,19 +21,15 @@ import { ReactComponent as Aws } from '../../assets/aws.svg';
 import '../../styles/micro/project.scss';
 import '../../styles/micro/links.scss';
 import '../../styles/micro/technology.scss';
-import '../../styles/micro/resume.scss';
+
+const displayDate = () => {
+    const hours = new Date().getHours();
+    return hours >= 5 && hours < 12 ? "Morning" : hours >= 12 && hours < 18 ? "Afternoon" : "Evening";
+}
 
 const About = () => {
     return (
         <div className="flex--column page">
-
-            <div className="flex--row resume--wrapper">
-                <div>
-                    Download my resume here
-                </div>
-                <Download />
-            </div>
-
             <div className="flex--row socials">
                 <ExternalLink color="#1A8CD8" href="https://twitter.com/1020Forbidden" img={Twitter}/>
                 <ExternalLink color="white" href="https://github.com/Atomoox" img={Github}/>
@@ -43,10 +37,10 @@ const About = () => {
             </div>
             <div className="flex--column">
                 <div className="title">
-                    Morning, i’m Clément,
+                    {displayDate()}, I’m Clément,
                 </div>
                 <div className="text">
-                    a 18 years old software engeneer from France 🇫🇷 studying Computer Science at the IUT Montpellier-Sète.
+                    a 18 years old software engineer from France 🇫🇷 studying Computer Science at the IUT Montpellier-Sète.
                 </div>
             </div>
 
@@ -68,7 +62,7 @@ const About = () => {
 
             <div className="flex--column">
                 <div className="subtitle">
-                    Technologies ⌨ 
+                    Technologies 🏹
                 </div>
 
                 <div className="text">

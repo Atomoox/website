@@ -1,11 +1,15 @@
 import { useLocation } from 'react-router-dom';
 
 import { HeaderNav } from '../micro/HeaderNav';
+import { HireMe } from '../micro/HireMe';
 
 import { ROUTES } from '../../types';
 
+import { ReactComponent as Download } from '../../assets/download.svg';
+
+import '../../styles/micro/resume.scss';
 import '../../styles/macro/header.scss';
-import { HireMe } from '../micro/HireMe';
+
 
 const Header = () => {
     const location = useLocation();
@@ -21,7 +25,16 @@ const Header = () => {
                     />
                 ))}
             </div>
-            <HireMe />
+            <div className="flex--row">
+                <div className="flex--row resume--wrapper">
+                    <div>
+                        Resume
+                    </div>
+                    <Download />
+                </div>
+                <HireMe />
+            </div>
+            
         </div>
     );
 };
