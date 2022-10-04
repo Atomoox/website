@@ -1,9 +1,14 @@
+import { useRef } from 'react';
+
 import { SubmitButton } from '../micro/SubmitButton';
 
 import '../../styles/micro/input.scss';
 import { useEffect, useState } from 'react';
 
 const Contact = () => {
+    const emailRef = useRef<HTMLInputElement>(null);
+    const messageRef = useRef<HTMLTextAreaElement>(null);
+
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
     useEffect(() => {
@@ -14,7 +19,7 @@ const Contact = () => {
         }
     }, [status]);
 
-    const sendMessage = async () => {
+    const sendMessage = async (email: string, message: string) => {
         if (status !== 'idle') return;
 
         setStatus('loading');
@@ -22,7 +27,16 @@ const Contact = () => {
         let response;
 
         try {
-            response = await fetch('https://tls.peet.ws/api/all', {});
+            response = await fetch('message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email,
+                    message
+                })
+            });
         } catch {
             setStatus('error');
             return;
@@ -46,7 +60,7 @@ const Contact = () => {
                     <div className="label">
                         Email address
                     </div>
-                    <input placeholder="johndoe@gmail.com"/>
+                    <input ref={emailRef} placeholder="johndoe@gmail.com"/>
                 </div>
 
                 <div className="flex--column input--wrapper">
@@ -54,6 +68,7 @@ const Contact = () => {
                         Message
                     </div>
                     <textarea
+                        ref={messageRef}
                         placeholder='Hi, I would like to know more about your work' 
                         cols={50}
                         rows={10}
@@ -62,7 +77,7 @@ const Contact = () => {
                 
                 <SubmitButton 
                     status={status} 
-                    onClick={sendMessage}
+                    onClick={() => sendMessage(emailRef.current!.value, messageRef.current!.value)}
                 />
             </div>
         </div>
