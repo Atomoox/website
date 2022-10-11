@@ -30,6 +30,8 @@ const Me = () => {
                 </div>
             </div>
 
+            <div className="separator"/>
+
             <div className="flex--column timeline--wrapper">
                  {EVENTS.map(event => (
                     <TimelineEvent {...event}/>

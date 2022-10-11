@@ -1,28 +1,30 @@
 @import '../variables.scss';
 
-.header {
-    padding: 30px 0px;
-    justify-content: space-between;
-    align-items: center;
-    & > div {
-        gap: 20px;
-    }
-
-    .nav {
-        font-size: 14px;
-        color: $text-color; 
-        font-weight: 600;
-        padding: 5px 20px;
-        border-radius: 5px;
-
-        &.selected {
-            color: $title-color;
-            background-color: rgba(255, 255, 255, 0.2); 
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 30px 0px;
+        justify-content: space-between;
+        align-items: center;
+        & > div {
+            gap: 20px;
         }
-
-        &:hover {
-            color: $title-color;
-            background-color: rgba(255, 255, 255, 0.1);
+    
+        .nav {
+            font-size: 14px;
+            color: $text-color; 
+            font-weight: 600;
+            padding: 5px 20px;
+            border-radius: 5px;
+    
+            &.selected {
+                color: $title-color;
+                background-color: rgba(255, 255, 255, 0.2); 
+            }
+    
+            &:hover {
+                color: $title-color;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
         }
     }
 }

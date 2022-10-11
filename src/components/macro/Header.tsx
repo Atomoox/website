@@ -32,7 +32,6 @@ const Header = () => {
                     </div>
                     <Download />
                 </div>
-                <HireMe />
             </div>
             
         </div>

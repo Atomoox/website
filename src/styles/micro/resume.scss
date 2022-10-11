@@ -1,36 +1,26 @@
-@keyframes Float {
-    0% {
-        transform: translatey(0px);
-    }
-    50% {
-        transform: translatey(-10px);
-    }
-    100% {
-        transform: translatey(0px);
-    }
-}
+@media only screen and (min-width: 768px) {
+    .resume--wrapper {
+        gap: 10px;
+        color: black;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 5px 20px;
+        border-radius: 50px;
+        margin: auto;
+        background-color: white;
+        cursor: pointer;
+        animation: ease-in-out;
+        transition-duration: .4s;
 
-.resume--wrapper {
-    gap: 10px;
-    color: black;
-    font-weight: 600;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    padding: 5px 10px;
-    border-radius: 50px;
-    margin: auto;
-    background-color: white;
-    cursor: pointer;
-    animation: ease-in-out;
-    transition-duration: .4s;
-
-    &:hover {
-        scale: 1.05;
-    }
-    svg {
-        path {
-            stroke: black;
+        &:hover {
+            scale: 1.05;
+        }
+        svg {
+            path {
+                stroke: black;
+            }
         }
     }
 }

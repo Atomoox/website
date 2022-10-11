@@ -1,23 +1,50 @@
 @import './variables.scss';
 
-.page {
-    .title {
-        font-size: 45px;
-        font-weight: 600;
-        color: $title-color;  
-    }
+@media only screen and (min-width: 768px) {
+    .page {
+        .title {
+            font-size: 45px;
+            font-weight: 600;
+            color: $title-color;  
+        }
 
-    .subtitle {
-        font-size: 30px;
-        font-weight: 600;
-        color: $title-color;
-    }
+        .subtitle {
+            font-size: 30px;
+            font-weight: 600;
+            color: $title-color;
+        }
 
-    .text {
-        color: #A7A7A7;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 25px;
-        text-align: justify;
+        .text {
+            color: #A7A7A7;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 25px;
+            text-align: justify;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .page {
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            color: $title-color;  
+        }
+
+        .subtitle {
+            font-size: 18px;
+            font-weight: 600;
+            color: $title-color;
+        }
+
+        .text {
+            color: #A7A7A7;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 25px;
+            text-align: justify;
+        }
     }
 }
