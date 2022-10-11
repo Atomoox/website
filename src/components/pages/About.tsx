@@ -54,12 +54,16 @@ const About = () => {
                 </div>
             </div>
 
+            <div className="separator"/>
+
             <div className="flex--row project--wrapper">
                 {PROJECTS.map((props) => (
                     <Project {...props}/>
                 ))}
             </div>
 
+            <div className="separator"/>
+            
             <div className="flex--column">
                 <div className="subtitle">
                     Technologies 🏹

@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="flex--row footer">
             <div className="flex--column">
                 <div className="name">
-                    Trens Clément
+                    Clément Trens
                 </div>
                 <div className="title">
                     Software Engineer • 2022 

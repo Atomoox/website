@@ -14,6 +14,14 @@ import '../../styles/macro/header.scss';
 const Header = () => {
     const location = useLocation();
     
+    const MobileHeader = () => {
+        return (
+            <div className="flex--row mobile header">
+                
+            </div>
+        )
+    }
+
     return (
         <div className="flex--row header">
             <div className="flex--row">
@@ -32,7 +40,6 @@ const Header = () => {
                     </div>
                     <Download />
                 </div>
-                <HireMe />
             </div>
             
         </div>

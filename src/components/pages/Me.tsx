@@ -1,9 +1,26 @@
+import { useEffect, useState } from "react";
+
 import { EVENTS } from "../../types";
 import { TimelineEvent } from "../micro/TimelineEvent";
 
 import '../../styles/micro/timelineEvents.scss';
 
 const Me = () => {
+    const [width, setWidth] = useState<number>(window.innerWidth);
+
+    const handleWindowSizeChange = () => {
+        setWidth(window.innerWidth);
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
+
+    const isMobile = width <= 768;
+
     return (
         <div className="flex--column page">
             <div className="title">
@@ -30,9 +47,11 @@ const Me = () => {
                 </div>
             </div>
 
+            <div className="separator"/>
+
             <div className="flex--column timeline--wrapper">
                  {EVENTS.map(event => (
-                    <TimelineEvent {...event}/>
+                    <TimelineEvent {...event} isMobile={isMobile}/>
                  ))}
             </div>
         </div>
