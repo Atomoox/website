@@ -6,7 +6,7 @@ interface ProjectProps {
 
 const Project = (props: ProjectProps) => {
     return (
-        <div className="flex--column project" style={{backgroundImage: `url(${props.img})`}}>
+        <div className="flex--column project">
             <div className="title">
                 {props.title}
             </div>

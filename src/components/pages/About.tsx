@@ -40,7 +40,7 @@ const About = () => {
                     {displayDate()}, I’m Clément,
                 </div>
                 <div className="text">
-                    a 18 years old software engineer from France 🇫🇷 studying Computer Science at the IUT Montpellier-Sète.
+                    a 18 years old software engineer from France 🇫🇷 studying Computer Science at the Montpellier Institute of Technology.
                 </div>
             </div>
 
@@ -50,7 +50,7 @@ const About = () => {
                 </div>
 
                 <div className="text">
-                    In 4 years of coding, i’ve had the time to do many projects, alot of them going straight to the archive folders. But in between 2 fun or personal projects, here’s some projects with real objectives and infrastructure 🤠
+                    In four years of coding, I’ve had the time to develop several working projects, some of them going right to the archive folders. Amongst fun or personal activities, here are some projects with real objectives and infrastructure 🤠
                 </div>
             </div>
 
@@ -66,7 +66,7 @@ const About = () => {
                 </div>
 
                 <div className="text">
-                    I use a wide range of tools to engineer and develop scalable and efficient solutions. Here are the ones i am the most proefficient with 💥
+                    My coding is based on a wide range of tools to engineer and develop scalable and efficient solutions. Here are those I am the most proficient with 💥
                 </div>
             </div>
 
