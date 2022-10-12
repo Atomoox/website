@@ -1,5 +1,3 @@
-import { AnimatePresence, motion } from 'framer-motion';
-
 import { ReactComponent as Submit } from '../../assets/submit.svg';
 import { ReactComponent as Loading } from '../../assets/loading.svg';
 import { ReactComponent as Error } from '../../assets/cross.svg';
