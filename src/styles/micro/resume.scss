@@ -24,3 +24,24 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .resume--wrapper {
+        gap: 10px;
+        color: black;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        padding: 5px 20px;
+        border-radius: 2px;
+        background-color: white;
+        cursor: pointer;
+
+        svg {
+            path {
+                stroke: black;
+            }
+        }
+    }
+}

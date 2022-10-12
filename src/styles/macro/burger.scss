@@ -1,0 +1,39 @@
+.burger--wrapper {
+    background-color: white;
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 30px;
+    gap: 30px;
+
+    svg {
+        cursor: pointer;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .nav {
+        cursor: pointer;
+        .name {
+            font-weight: 600;
+            font-size: 18px;
+            color: black;
+
+        }
+        .description {
+            color: #A7A7A7;
+            font-size: 12px;
+        }
+    }
+
+    .nav--wrapper {
+        gap: 20px;
+    }
+}
+
