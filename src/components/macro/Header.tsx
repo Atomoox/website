@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
 
 import { HeaderNav } from '../micro/HeaderNav';
 
@@ -36,9 +35,9 @@ const Header = () => {
     
     const MobileHeader = () => {
         return (
-            <AnimatePresence>
+            <>
                 {!isOpened && (
-                    <motion.div 
+                    <div 
                         className="flex--row header"
                     >
                         <Burger onClick={() => setIsOpened(true)}/>
@@ -48,15 +47,11 @@ const Header = () => {
                             </div>
                             <Download />
                         </div>
-                    </motion.div>
+                    </div>
                 )}
                 {isOpened && (
-                    <motion.div
+                    <div
                         className="flex--column burger--wrapper"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.5 }}
                     >
                         <Close onClick={() => setIsOpened(false)}/>
                         <div className="title">
@@ -88,9 +83,9 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                 )}
-            </AnimatePresence>
+            </>
         )
     }
 
