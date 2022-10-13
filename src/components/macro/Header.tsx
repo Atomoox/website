@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import { HeaderNav } from '../micro/HeaderNav';
@@ -16,6 +16,7 @@ import '../../styles/macro/burger.scss';
 
 const Header = () => {
     const location = useLocation();
+    const navigate = useNavigate();
 
     const [width, setWidth] = useState<number>(window.innerWidth);
     const [isOpened, setIsOpened] = useState<boolean>(false);
@@ -34,6 +35,10 @@ const Header = () => {
     const isMobile = width <= 768;
     
     const MobileHeader = () => {
+        const nav = (route: string) => {
+            navigate(route);
+            setIsOpened(false);
+        }
         return (
             <>
                 {!isOpened && (
@@ -58,7 +63,7 @@ const Header = () => {
                             Navigation
                         </div>
                         <div className="flex--column nav--wrapper">
-                            <div className="nav flex--column">
+                            <div className="nav flex--column" onClick={() => nav('/about')}>
                                 <div className="name">
                                     ./about
                                 </div>
@@ -66,7 +71,7 @@ const Header = () => {
                                     Home page, know more about me
                                 </div>
                             </div>
-                            <div className="nav flex--column">
+                            <div className="nav flex--column" onClick={() => nav('/contact')}>
                                 <div className="name">
                                     ./contact
                                 </div>
@@ -74,7 +79,7 @@ const Header = () => {
                                     Have a question ? Leave it here!
                                 </div>
                             </div>
-                            <div className="nav flex--column">
+                            <div className="nav flex--column" onClick={() => nav('/me')}>
                                 <div className="name">
                                     ./me
                                 </div>

@@ -15,3 +15,22 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .socials {
+        display: none !important;
+        gap: 10px;
+    }
+
+    .external--link {
+        cursor: pointer;
+        padding: 7px;
+        border-radius: 10px;
+        animation: ease-in-out;
+        transition-duration: .4s;
+        display: none !important;
+        &:hover {
+            scale: 1.25;
+        }
+    }
+}
