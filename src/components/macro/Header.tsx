@@ -9,6 +9,8 @@ import { ReactComponent as Download } from '../../assets/download.svg';
 import { ReactComponent as Burger } from '../../assets/burger.svg'; 
 import { ReactComponent as Close } from '../../assets/close.svg'; 
 
+import Resume from '../../assets/Clement_Trens_Resume.pdf';
+
 import '../../styles/micro/resume.scss';
 import '../../styles/macro/header.scss';
 import '../../styles/macro/burger.scss';
@@ -108,12 +110,14 @@ const Header = () => {
                 ))}
             </div>
             <div className="flex--row">
-                <div className="flex--row resume--wrapper">
-                    <div>
-                        Resume
+                <a href={Resume} download>
+                    <div className="flex--row resume--wrapper">
+                        <div>
+                            Resume
+                        </div>
+                        <Download />
                     </div>
-                    <Download />
-                </div>
+                </a>
             </div>
             
         </div>

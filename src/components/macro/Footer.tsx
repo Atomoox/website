@@ -14,7 +14,7 @@ const Footer = () => {
 
             <div className="flex--column contact">
                 <div>
-                    clement.trens1@gmail.com
+                    clement.trens@etu.umontpellier.fr
                 </div>
                 <div>
                     (+33) 7 83 14 31 25

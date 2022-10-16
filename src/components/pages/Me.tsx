@@ -33,7 +33,7 @@ const Me = () => {
                 </div>
 
                 <div className="text">
-                    Code being my favorite thing to do, i also enjoy many other things. Listening to music and playing video games are both activities i love doing
+                    Code being my favorite thing to do, I also enjoy many other things. Listening to music and playing video games are both activities I love doing.
                 </div>
             </div>
 
@@ -43,7 +43,7 @@ const Me = () => {
                 </div>
 
                 <div className="text">
-                    To pursue my passion for coding, i had to deal with courses, exams and personal projects at the same time. It wasn’t that easy to keep up,  but i did the best i could to do well in both. Here’s a timeline of my projects along with major events of my education.
+                To pursue my passion for coding, I had to deal with courses, exams and personal projects at the same time. It wasn’t that easy to keep up, but I did the best I could to do well in both. Here’s a timeline of my projects along with the major events of my education.
                 </div>
             </div>
 

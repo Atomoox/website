@@ -50,7 +50,7 @@ const About = () => {
                 </div>
 
                 <div className="text">
-                    In four years of coding, I’ve had the time to develop several working projects, some of them going right to the archive folders. Amongst fun or personal activities, here are some projects with real objectives and infrastructure 🤠
+                    In four years of coding, I’ve had the time to develop several working projects, some of them going right to the archive folders. Amongst fun or personal activities, here are some projects developed on professional grounds with real business models. 🤠
                 </div>
             </div>
 
@@ -70,7 +70,7 @@ const About = () => {
                 </div>
 
                 <div className="text">
-                    My coding is based on a wide range of tools to engineer and develop scalable and efficient solutions. Here are those I am the most proficient with 💥
+                    My coding is based on a wide range of tools to engineer and develop scalable and efficient solutions. Here are the tools I am the most proficient with 💥
                 </div>
             </div>
 

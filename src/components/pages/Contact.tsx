@@ -51,8 +51,7 @@ const Contact = () => {
                 Let’s get in touch!
             </div>
             <div className="text">
-                If you have any question about my work or any equiry, feel free to send me a message
-                i’ll anwser as soon as possible!
+                If you have any question about my work or any inquiry, feel free to send me a message. I’ll answer as soon as possible!
             </div>
 
             <div className="flex--column input--displays">
