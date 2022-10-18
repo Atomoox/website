@@ -1,6 +1,7 @@
 import { ReactComponent as Submit } from '../../assets/submit.svg';
 import { ReactComponent as Loading } from '../../assets/loading.svg';
 import { ReactComponent as Error } from '../../assets/cross.svg';
+import { ReactComponent as Success } from '../../assets/success.svg';
 
 import '../../styles/micro/submit.scss';
 
@@ -32,6 +33,13 @@ const SubmitButton = (props: SubmitButtonProps) => {
             backgroundColor = '#F5356320';
             content = 'Error';
             Icon = Error;
+            break;
+
+        case 'success':
+            color = '#8AD0AC';
+            backgroundColor = '#8AD0AC20';
+            content = 'Success';
+            Icon = Success;
             break;
             
     }

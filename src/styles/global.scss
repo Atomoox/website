@@ -22,6 +22,10 @@ body {
     height: 100%;
 }
 
+a {
+    color: black;
+}
+
 @media only screen and (min-width: 768px) {
     .main--wrapper {
         width: calc(50% - 20px);

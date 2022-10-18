@@ -48,14 +48,14 @@ const Header = () => {
                         className="flex--row header"
                     >
                         <Burger onClick={() => setIsOpened(true)}/>
-                        <div className="flex--row resume--wrapper">
-                            <a href={Resume} download>
+                        <a href={Resume} download>
+                            <div className="flex--row resume--wrapper">
                                 <div>
                                     Resume
                                 </div>
                                 <Download />
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 )}
                 {isOpened && (

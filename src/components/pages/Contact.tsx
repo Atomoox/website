@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import axios from 'axios';
 
 import { SubmitButton } from '../micro/SubmitButton';
 
@@ -27,22 +28,23 @@ const Contact = () => {
         let response;
 
         try {
-            response = await fetch('message', {
-                method: 'POST',
+            response = await axios({
+                url: "https://royalsea.io/api/message",
+                method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({
+                data: JSON.stringify({
                     email,
                     message
                 })
-            });
+              });
         } catch {
             setStatus('error');
             return;
         }
 
-        setStatus(response.ok ? 'success' : 'error');
+        setStatus(response.status === 200 ? 'success' : 'error');
     }
 
     return (
@@ -59,7 +61,7 @@ const Contact = () => {
                     <div className="label">
                         Email address
                     </div>
-                    <input ref={emailRef} placeholder="johndoe@gmail.com"/>
+                    <input ref={emailRef} placeholder="johndoe@gmail.com" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
                 </div>
 
                 <div className="flex--column input--wrapper">
