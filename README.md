@@ -7,7 +7,7 @@ The website is powered by [heroku](https://dashboard.heroku.com/)
 ## Installation
 
 Install all the depencies using
-### `npm run i`
+### `npm i`
 You're now set to run the app.
 
 ## Available Scripts
